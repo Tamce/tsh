@@ -131,11 +131,11 @@ int main(int argc, char **argv, char * const*envp)
 {
     TShell tsh(std::cin, std::cout, envp);
     tsh.printHello();
-	while (tsh.running())
-	{
+    while (tsh.running())
+    {
         tsh.printPS();
         tsh.readLine();
         tsh.exec();
-	}
-	return 0;
+    }
+    return 0;
 }
